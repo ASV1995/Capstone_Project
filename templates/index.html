@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Charged Off Prediction Model</title>
+</head>
+
+<body style="background: #000;">
+  <div class="login">
+    <h1 style="color:Violet;">Customer Charge Off Prediction</h1>
+
+    <form action="{{ url_for('predict') }}" method="post">
+      <input type="text" name="loan_amnt" placeholder="Loan amount" required="required" /><br>
+      <input type="text" name="emp_length" placeholder="Employment length" required="required" /><p>
+      <input type="text" name="int_rate" placeholder="Interest rate" required="required" /><p>
+      <input type="text" name="installment" placeholder="Installments" required="required" /><br>
+      <input type="text" name="annual_inc" placeholder="Annual income" required="required" /><p>
+      <input type="text" name="delinq_2yrs" placeholder="Delinquency in past 2 years" required="required" /><p>
+      <input type="text" name="pub_rec" placeholder="Derogatory public records" required="required" /><br>
+      <input type="text" name="total_pymnt" placeholder="Payments received" required="required" /><p>
+      <input type="text" name="collections_12_mths_ex_med" placeholder="Collections in 12 months" required="required" /><p>
+      <input type="text" name="acc_now_delinq" placeholder="Delinquent account" required="required" /><br>
+      <input type="text" name="tot_cur_bal" placeholder="Total current balance" required="required" /><p>
+      <input type="text" name="mort_acc" placeholder="Mortgage accounts" required="required" /><p>
+      <input type="text" name="pub_rec_bankruptcies" placeholder="Public record bankruptcies" required="required" /><br>
+      <input type="text" name="fico_range" placeholder="Credit Score" required="required" /><p>
+      <input type="text" name="term__36_months" placeholder="36 loan term" required="required" /><p>
+      <input type="text" name="term__60_months" placeholder="60 loan term" required="required" /><p>
+      <input type="text" name="home_ownership_ANY" placeholder="Any homeownership" required="required" /><p>
+      <input type="text" name="home_ownership_MORTGAGE" placeholder="Mortgage homeownership" required="required" /><p>
+      <input type="text" name="home_ownership_NONE" placeholder="No homeownership" required="required" /><p>
+      <input type="text" name="home_ownership_RENT" placeholder="Rent homeownership" required="required" /><p>
+      <input type="text" name="home_ownership_OWN" placeholder="Own homeownership" required="required" /><p>
+      <input type="text" name="verification_status_Not_Verified" placeholder="Not verified status" required="required" /><p>
+      <input type="text" name="verification_status_Source_Verified" placeholder="Source verfiied status" required="required" /><p>
+      <input type="text" name="verification_status_Verified" placeholder="LC Verified status" required="required" /><p>
+      <input type="text" name="purpose_car" placeholder="Loan for car" required="required" /><p>
+      <input type="text" name="purpose_credit_card" placeholder="Loan for credit card" required="required" /><p>
+      <input type="text" name="purpose_debt_consolidation" placeholder="Loan for debt consolidation" required="required" /><p>
+      <input type="text" name="purpose_home_improvement" placeholder="Loan for home improvement" required="required" /><p>
+      <input type="text" name="purpose_house" placeholder="Loan for home" required="required" /><p>
+      <input type="text" name="purpose_major_purchase" placeholder="Loan for major purchase" required="required" /><p>
+      <input type="text" name="purpose_medical" placeholder="Loan for medical" required="required" /><p>
+      <input type="text" name="purpose_moving" placeholder="Loan for moving" required="required" /><p>
+      <input type="text" name="purpose_other" placeholder="Loan for other" required="required" /><p>
+      <input type="text" name="purpose_renewable_energy" placeholder="Loan for renewable energy" required="required" /><p>
+      <input type="text" name="purpose_small_business" placeholder="Loan for small business" required="required" /><p>
+      <input type="text" name="purpose_vacation" placeholder="Loan for vacation" required="required" /><p>
+      <input type="text" name="purpose_wedding" placeholder="Loan for wedding" required="required" /><p>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict charge off risk</button></p>
+    </form>
+
+</div>
+
+</body>
+</html> 
